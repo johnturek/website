@@ -4,21 +4,22 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Test</title>
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="{{site.baseurl}}/css/common.css">
 </head>
 <body>
 
 <header>
-<h1> Website </h1>
-<nav>
-<ul>
-<li> <a href="{{site.baseurl}}/index.html">Home</a></li>
-<li> <a href="{{site.baseurl}}/news.html">News</a></li>
-</ul>
-</nav>
+<h1>Website</h1>
+{% include nav.html navclass='nav-top' %}
 </header>
 
 {{content}}
+
+<footer>
+{% include nav.html navclass='nav-bottom' %}
+
+<p>(c) 2015 John V. Turek </p>
+</footer>
 
 </body>
 </html>
